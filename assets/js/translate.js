@@ -376,17 +376,32 @@ function changeLanguage(lng) {
 
 $(function() { 
     // Default Language
-    changeLanguage("jp");
+
+    if($("span#japan")) {
+        changeLanguage("jp");
+    }
+
+    else if($("span#myanmar")) {
+        changeLanguage("mm");
+    }
+
+    else if($("span#english")) {
+        changeLanguage("en");
+    }
+    
  
     $("a#mm_button").click(function(){
+        $("span#japan").attr("id", "myanmar");
         changeLanguage("mm");
     });
 
     $("a#en_button").click(function(){
+        $("span#japan").attr("id", "english");
         changeLanguage("en");
     });
 
     $("a#jp_button").click(function(){
+        $("span#japan").attr("id", "japan");
         changeLanguage("jp");
     });
 });
