@@ -38,7 +38,6 @@ body {
 #parent .swiper-slide {
 	background-size: cover;
 	background-position: center;
-	background-color: #000;
 }
 
 #parent .gallery-top {
@@ -61,15 +60,30 @@ body {
 	opacity: 1;
 }
 
-/* swiper */
+/* Teachers swiper */
 
-#team .swiper-container {
+#teachers .swiper-container {
 	width: 100%;
 	padding-top: 50px;
 	padding-bottom: 50px;
 }
 
-#team .swiper-slide {
+#teachers .swiper-slide {
+	background-position: center;
+	background-size: cover;
+	width: 300px;
+	height: 100%;
+}
+
+/* Students swiper */
+
+#students .swiper-container {
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#students .swiper-slide {
 	background-position: center;
 	background-size: cover;
 	width: 300px;
@@ -1212,8 +1226,7 @@ preview-2
 }
 
 .team-social-icon {
-	left: 50%;
-	margin-left: -61px;
+	left: 45%;
 	opacity: 0;
 	position: absolute;
 	top: 30%;
@@ -1739,6 +1752,52 @@ preview-2
 		font-size: 18px;
 		line-height: 28px;
 	}
+
+	/* #Gallery */
+
+	#parent {
+		height: 600px;
+	}
+
+	#parent {
+		font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		color: #000;
+		margin: 0;
+		padding: 0;
+	}
+
+	#parent .swiper-container {
+		width: 70%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#parent .swiper-slide {
+		background-size: cover;
+		background-position: center;
+	}
+
+	#parent .gallery-top {
+		height: 60%;
+		width: 70%;
+	}
+
+	#parent .gallery-thumbs {
+		height: 18%;
+		box-sizing: border-box;
+		padding: 10px 0;
+	}
+
+	#parent .gallery-thumbs .swiper-slide {
+		height: 100%;
+		opacity: 0.4;
+	}
+
+	#parent .gallery-thumbs .swiper-slide-thumb-active {
+		opacity: 1;
+	}
 }
 
 /* Tablet desktop :768px. */
@@ -1837,36 +1896,35 @@ preview-2
 		padding: 0;
 	}
 
-	.swiper-container {
+	#parent .swiper-container {
 		width: 100%;
 		height: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.swiper-slide {
+	#parent .swiper-slide {
 		background-size: cover;
 		background-position: center;
-		background-color: #000;
 	}
 
-	.gallery-top {
-		height: 70%;
+	#parent .gallery-top {
+		height: 75%;
 		width: 100%;
 	}
 
-	.gallery-thumbs {
-		height: 30%;
+	#parent .gallery-thumbs {
+		height: 20%;
 		box-sizing: border-box;
 		padding: 10px 0;
 	}
 
-	.gallery-thumbs .swiper-slide {
+	#parent .gallery-thumbs .swiper-slide {
 		height: 100%;
 		opacity: 0.4;
 	}
 
-	.gallery-thumbs .swiper-slide-thumb-active {
+	#parent .gallery-thumbs .swiper-slide-thumb-active {
 		opacity: 1;
 	}
 }
@@ -1993,37 +2051,66 @@ preview-2
 		padding: 0;
 	}
 
-	.swiper-container {
+	#parent .swiper-container {
 		width: 100%;
 		height: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.swiper-slide {
+	#parent .swiper-slide {
 		background-size: cover;
 		background-position: center;
-		background-color: #000;
 	}
 
-	.gallery-top {
-		height: 70%;
+	#parent .gallery-top {
+		height: 50%;
 		width: 100%;
 	}
 
-	.gallery-thumbs {
+	#parent .gallery-thumbs {
 		height: 30%;
 		box-sizing: border-box;
 		padding: 10px 0;
 	}
 
-	.gallery-thumbs .swiper-slide {
+	#parent .gallery-thumbs .swiper-slide {
 		height: 100%;
 		opacity: 0.4;
 	}
 
-	.gallery-thumbs .swiper-slide-thumb-active {
+	#parent .gallery-thumbs .swiper-slide-thumb-active {
 		opacity: 1;
+	}
+
+	/* Teachers swiper */
+
+	#teachers .swiper-container {
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	#teachers .swiper-slide {
+		background-position: center;
+		background-size: cover;
+		width: 300px;
+		height: 422px;
+	}
+
+	/* Students swiper */
+
+	#students .swiper-container {
+		width: 100%;
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	#students .swiper-slide {
+		background-position: center;
+		background-size: cover;
+		width: 300px;
+		height: 475px;
 	}
 }
 
@@ -2070,36 +2157,35 @@ preview-2
 		padding: 0;
 	}
 
-	.swiper-container {
+	#parent .swiper-container {
 		width: 100%;
 		height: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.swiper-slide {
+	#parent .swiper-slide {
 		background-size: cover;
 		background-position: center;
-		background-color: #000;
 	}
 
-	.gallery-top {
+	#parent .gallery-top {
 		height: 70%;
 		width: 100%;
 	}
 
-	.gallery-thumbs {
+	#parent .gallery-thumbs {
 		height: 30%;
 		box-sizing: border-box;
 		padding: 10px 0;
 	}
 
-	.gallery-thumbs .swiper-slide {
+	#parent .gallery-thumbs .swiper-slide {
 		height: 100%;
 		opacity: 0.4;
 	}
 
-	.gallery-thumbs .swiper-slide-thumb-active {
+	#parent .gallery-thumbs .swiper-slide-thumb-active {
 		opacity: 1;
 	}
 }
@@ -2131,36 +2217,35 @@ preview-2
 		padding: 0;
 	}
 
-	.swiper-container {
+	#parent .swiper-container {
 		width: 100%;
 		height: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.swiper-slide {
+	#parent .swiper-slide {
 		background-size: cover;
 		background-position: center;
-		background-color: #000;
 	}
 
-	.gallery-top {
-		height: 70%;
+	#parent .gallery-top {
+		height: 64%;
 		width: 100%;
 	}
 
-	.gallery-thumbs {
-		height: 30%;
+	#parent .gallery-thumbs {
+		height: 20%;
 		box-sizing: border-box;
 		padding: 10px 0;
 	}
 
-	.gallery-thumbs .swiper-slide {
+	#parent .gallery-thumbs .swiper-slide {
 		height: 100%;
 		opacity: 0.4;
 	}
 
-	.gallery-thumbs .swiper-slide-thumb-active {
+	#parent .gallery-thumbs .swiper-slide-thumb-active {
 		opacity: 1;
 	}
 }
