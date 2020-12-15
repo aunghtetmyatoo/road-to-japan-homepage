@@ -23,6 +23,10 @@ function getLangResources(){
     en['menu-students'] = "Students"; 
     jp['menu-students'] = "学生";
 
+    mm['menu-photos'] = "ဓါတ်ပုံအယ်လ်ဘမ်";
+    en['menu-photos'] = "Photos Album"; 
+    jp['menu-photos'] = "写真集";
+
     mm['lng'] = "မြန်မာစာ";
     en['lng'] = "English"; 
     jp['lng'] = "日本語";
@@ -194,6 +198,10 @@ function changeLanguage(lng) {
     });
 
     $("a[name='menu-students']").each(function(i, elt){
+        $(elt).text(resources[$(elt).attr("caption")]);
+    });
+
+    $("a[name='menu-photos']").each(function(i, elt){
         $(elt).text(resources[$(elt).attr("caption")]);
     });
 

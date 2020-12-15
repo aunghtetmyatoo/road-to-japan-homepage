@@ -64,7 +64,7 @@ body {
 
 #teachers .swiper-container {
 	width: 100%;
-	padding-top: 50px;
+	padding-top: 0px;
 	padding-bottom: 50px;
 }
 
@@ -79,7 +79,7 @@ body {
 
 #students .swiper-container {
 	width: 100%;
-	padding-top: 50px;
+	padding-top: 0px;
 	padding-bottom: 50px;
 }
 
@@ -504,18 +504,6 @@ div#preloader {
 	position: absolute;
 	right: 15px;
 }
-
-/* @media (max-width: 1366px) {
-	.nav-menu .drop-down .drop-down ul {
-		left: -90%;
-	}
-	.nav-menu .drop-down .drop-down:hover > ul {
-		left: -100%;
-	}
-	.nav-menu .drop-down .drop-down > a:after {
-		content: "\ea9d";
-	}
-} */
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
@@ -1061,30 +1049,6 @@ preview-2
 }
 
 /*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
-.our-skill-area {
-	position: relative;
-}
-
-.our-skill-area {
-	background: rgba(248, 248, 248, 0.8) url("../img/background/bg1.jpg")
-		no-repeat fixed center top/cover;
-}
-
-.test-overly {
-	background: rgba(0, 0, 0, 0.8);
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-
-.progress-h4 {
-	color: #fff;
-	font-weight: 500;
-}
-
-/*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
 .team-member {
@@ -1280,306 +1244,6 @@ preview-2
 	font-weight: 600;
 	padding-bottom: 10px;
 	text-transform: uppercase;
-}
-
-/*--------------------------------------------------------------
-# Portfolio
---------------------------------------------------------------*/
-.pst-content {
-	padding-left: 10px;
-}
-
-.project-menu {
-	margin-bottom: 40px;
-	text-align: center;
-}
-
-.project-menu li {
-	display: inline-block;
-}
-
-.project-menu li a {
-	background: #fff none repeat scroll 0 0;
-	border: 1px solid #444;
-	border-radius: 20px;
-	color: #444;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 500;
-	margin: 0 4px;
-	padding: 6px 15px;
-	text-transform: capitalize;
-	transition: all 0.3s ease 0s;
-}
-
-.project-menu li a.active,
-.project-menu li a:hover {
-	border-color: #f25e32;
-	background: #f25e32;
-	color: #fff;
-	text-decoration: none;
-}
-
-.single-awesome-portfolio {
-	float: left;
-	overflow: hidden;
-	padding: 15px;
-	width: 25%;
-	position: relative;
-}
-
-.single-awesome-project {
-	overflow: hidden;
-	margin-bottom: 30px;
-}
-
-.first-item {
-	margin-bottom: 30px;
-}
-
-.awesome-img {
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-.awesome-img > a {
-	display: block;
-	position: relative;
-}
-
-.single-awesome-project:hover .awesome-img > a::after {
-	opacity: 1;
-}
-
-.single-awesome-project:hover .add-actions {
-	opacity: 1;
-	bottom: 0;
-}
-
-.awesome-img > a::after {
-	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
-	content: "";
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	opacity: 0;
-	transition: 0.4s;
-}
-
-.add-actions {
-	background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
-	bottom: 30px;
-	display: block;
-	height: 100%;
-	left: 0;
-	opacity: 0;
-	overflow: hidden;
-	padding: 10px 15px;
-	position: absolute;
-	transition: all 0.4s ease 0s;
-	width: 100%;
-}
-
-.project-dec {
-	display: block;
-	height: 100%;
-	width: 100%;
-}
-
-.project-dec a {
-	display: block;
-	height: 100%;
-	width: 100%;
-}
-
-.project-dec h4 {
-	margin-bottom: 5px;
-}
-
-.project-dec h4:hover {
-	color: #fff;
-}
-
-.project-dec h4 {
-	color: #ddd;
-	font-size: 24px;
-	margin-top: -45px;
-	padding-top: 50%;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 800;
-}
-
-.project-dec span {
-	color: #ddd;
-	font-size: 13px;
-}
-
-.project-action-btn {
-	display: block;
-	height: 100%;
-	text-align: center;
-	transition: all 1s ease 0s;
-	width: 100%;
-}
-
-.project-action-btn li {
-	display: block;
-	height: 100%;
-	width: 100%;
-}
-
-.project-action-btn li a {
-	display: block;
-	height: 100%;
-	width: 100%;
-}
-
-/*--------------------------------------------------------------
-# Testimonials
---------------------------------------------------------------*/
-.testimonials-area {
-	background: rgba(0, 0, 0, 0) url("../img/background/slider1.jpg") no-repeat
-		fixed center top/cover;
-	height: auto;
-	width: 100%;
-}
-
-.testi-inner {
-	position: relative;
-	width: 100%;
-	height: auto;
-	z-index: 1;
-}
-
-.testi-overly {
-	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
-	height: 100%;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: -1;
-}
-
-.quate {
-	border: 1px dotted #fff;
-	border-radius: 50%;
-	color: #fff;
-	display: inline-block;
-	font-size: 24px;
-	height: 70px;
-	line-height: 70px;
-	width: 70px;
-}
-
-.quate:hover {
-	color: #fff;
-}
-
-.testi-img img {
-	border: 1px dotted rgba(0, 0, 0, 0.05);
-	border-radius: 2px;
-	height: 80px;
-	margin: 0 auto;
-	padding: 5px;
-	transition: background 0.6s ease-out 0s;
-	width: 80px !important;
-}
-
-.testi-text p {
-	color: #fff;
-	font-size: 16px;
-	line-height: 1.5em;
-	margin: 20px 0;
-	letter-spacing: 1px;
-}
-
-.testi-text h6 {
-	color: #fff;
-	font-size: 20px;
-}
-
-.testimonial-carousel.owl-carousel.owl-theme
-	.owl-controls
-	.owl-dots
-	div.owl-dot
-	> span {
-	background: #fff none repeat scroll 0 0;
-	display: inline-block;
-	height: 8px;
-	width: 8px;
-	transition: 0.4s;
-	border-radius: 50%;
-}
-
-.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
-	bottom: -30px;
-	display: block;
-	left: 50%;
-	margin-left: -20px;
-	position: absolute;
-}
-
-.testimonial-content {
-	margin-bottom: 15px;
-}
-
-.testimonial-carousel.owl-carousel.owl-theme
-	.owl-controls
-	.owl-dots
-	div.owl-dot {
-	display: inline-block;
-	margin: 0 3px;
-}
-
-.testimonial-carousel.owl-carousel.owl-theme
-	.owl-controls
-	.owl-dots
-	div.owl-dot.active
-	span {
-	background: #f25e32;
-}
-
-.testimonial-carousel .owl-nav,
-.testimonial-carousel .owl-dots {
-	margin-top: 5px;
-	text-align: center;
-}
-
-.testimonial-carousel .owl-dot {
-	display: inline-block;
-	margin: 0 5px;
-	width: 12px;
-	height: 12px;
-	border-radius: 50%;
-	background-color: #ddd !important;
-}
-
-.testimonial-carousel .owl-dot.active {
-	background-color: #f25e32 !important;
-}
-
-.testi-text.text-center > h6 {
-	color: #fff;
-	font-size: 20px;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.guest-rev {
-	color: #ddd;
-	font-size: 16px;
-}
-
-.guest-rev > a {
-	color: #f25e32;
-	font-size: 14px;
 }
 
 @-webkit-keyframes animate-loading {
@@ -2037,6 +1701,14 @@ preview-2
 		font-size: larger;
 	}
 
+	.area-padding {
+		padding: 20px 0px 30px;
+	}
+
+	.section-headline h2 {
+		margin-bottom: 40px;
+	}
+
 	/* #Gallery */
 
 	#parent {
@@ -2087,7 +1759,7 @@ preview-2
 
 	#teachers .swiper-container {
 		width: 100%;
-		padding-top: 50px;
+		padding-top: 0px;
 		padding-bottom: 50px;
 	}
 
@@ -2102,7 +1774,7 @@ preview-2
 
 	#students .swiper-container {
 		width: 100%;
-		padding-top: 50px;
+		padding-top: 0px;
 		padding-bottom: 50px;
 	}
 
@@ -2141,6 +1813,14 @@ preview-2
 		color: #000;
 		text-decoration: none;
 		font-size: larger;
+	}
+
+	.area-padding {
+		padding: 20px 0px 30px;
+	}
+
+	.section-headline h2 {
+		margin-bottom: 40px;
 	}
 
 	/* #Gallery */
@@ -2201,6 +1881,14 @@ preview-2
 		color: #000;
 		text-decoration: none;
 		font-size: larger;
+	}
+
+	.area-padding {
+		padding: 20px 0px 30px;
+	}
+
+	.section-headline h2 {
+		margin-bottom: 40px;
 	}
 
 	/* #Gallery */
