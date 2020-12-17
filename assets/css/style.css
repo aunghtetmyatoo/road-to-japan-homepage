@@ -647,10 +647,11 @@ div#preloader {
 	margin: 20px 0;
 }
 
-.layer-1-1 h2 {
-	color: #fff;
-	font-size: 32px;
+.layer-1-1 h1 {
+	color: #ec6036;
+	font-size: 50px;
 	font-weight: 700;
+	line-height: 60px;
 }
 
 .layer-1-2 h1 {
@@ -976,6 +977,7 @@ preview-2
 
 .single-well p {
 	color: #444;
+	line-height: 2;
 }
 
 /*--------------------------------------------------------------
@@ -1544,6 +1546,10 @@ preview-2
 		color: #000;
 		text-decoration: none;
 		font-size: larger;
+	}
+
+	.well-middle .single-well {
+		margin-top: 30px;
 	}
 
 	/* #Gallery */

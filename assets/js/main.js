@@ -1,9 +1,3 @@
-/**
-* Template Name: eBusiness - v2.1.1
-* Template URL: https://bootstrapmade.com/ebusiness-bootstrap-corporate-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function($) {
   "use strict";
 
@@ -145,11 +139,6 @@
     offset: 80
   });
 
-  /*---------------------
-    Venobox
-  --------------------- */
-  var veno_box = $('.venobox');
-  veno_box.venobox();
 
   /*----------------------------
   Page Scroll
@@ -198,91 +187,88 @@
     $(this).addClass('active');
   });
 
-  /*---------------------
-   Testimonial carousel
-  ---------------------*/
-  $(".testimonial-carousel").owlCarousel({
-    autoplay: true,
-    dots: true,
+  
+
+  /* Swiper */
+
+  var swiper = new Swiper('.well-left .swiper-container', {
+    effect: 'flip',
     loop: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      768: {
-        items: 1
-      },
-      900: {
-        items: 1
-      }
-    }
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
   });
-  /*----------------------------
-   isotope active
-  ------------------------------ */
-  // portfolio start
-  $(window).on("load", function() {
-    var $container = $('.awesome-project-content');
-    $container.isotope({
-      filter: '*',
-      animationOptions: {
-        duration: 750,
-        easing: 'linear',
-        queue: false
-      }
-    });
-    var pro_menu = $('.project-menu li a');
-    pro_menu.on("click", function() {
-      var pro_menu_active = $('.project-menu li a.active');
-      pro_menu_active.removeClass('active');
-      $(this).addClass('active');
-      var selector = $(this).attr('data-filter');
-      $container.isotope({
-        filter: selector,
-        animationOptions: {
-          duration: 750,
-          easing: 'linear',
-          queue: false
-        }
-      });
-      return false;
-    });
 
+  var swiper = new Swiper('#teachers .swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 20,
+      stretch: 0,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
   });
-  //portfolio end
 
-  /*---------------------
-   Circular Bars - Knob
---------------------- */
-  if (typeof($.fn.knob) != 'undefined') {
-    var knob_tex = $('.knob');
-    knob_tex.each(function() {
-      var $this = $(this),
-        knobVal = $this.attr('data-rel');
+  var swiper = new Swiper('#students .swiper-container', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+      rotate: 20,
+      stretch: 0,
+      depth: 200,
+      modifier: 1,
+      slideShadows: true,
+    },
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 
-      $this.knob({
-        'draw': function() {
-          $(this.i).val(this.cv + '%')
-        }
-      });
+      
 
-      $this.appear(function() {
-        $({
-          value: 0
-        }).animate({
-          value: knobVal
-        }, {
-          duration: 2000,
-          easing: 'swing',
-          step: function() {
-            $this.val(Math.ceil(this.value)).trigger('change');
-          }
-        });
-      }, {
-        accX: 0,
-        accY: -150
-      });
-    });
-  }
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    loop: true,
+    freeMode: true,
+    loopedSlides: 5, //looped slides should be the same
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    loop: true,
+    loopedSlides: 5, //looped slides should be the same
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs,
+    },
+  });
+
 
 })(jQuery);
